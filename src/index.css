@@ -1,13 +1,168 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --gray:#04040A;
+  --dark-gray:#181b22;
+  --dark-black:#0D1117;
+  --black:#1111117;
+  --green:#458341;
+  --light:#F0F6FC;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,h3,h2,h1,p{
+  margin: 0;
+  padding: 0;
+  
+
+}
+main{
+  background-color: #252525;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  min-height: calc(100vh - 4rem);
+
+}
+.head{
+  display: flex;
+  align-items: center;
+  width: 95vw ;
+  justify-content: center;
+}
+.head h1{
+  font-size: 2rem;
+  color: white;
+  margin-left: 1rem;
+}
+.head a .icon{
+  width: 4rem;
+  height: 4rem;
+  color: blue;
+  
+}
+.card{
+  width: 95vw;
+  max-width:500px;
+  background-color:#414141;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: white;
+  
+}
+
+.search{
+  width: 100%;
+  border-radius: 20px;
+
+}
+form >input{
+  border: none;
+  background-color: #414141;
+  color: gray;
+  font-size: 1.5rem;
+  text-align: center;
+  width: calc(100% - 6rem);
+  margin-right: 3rem;
+  outline: none;
+  
+}
+form >button{
+  background-color: #414141 ;
+  border: none;
+  color:gray;
+  
+}
+/* .detail{
+  padding: 1rem !important;
+} */
+.detail img{
+  border-radius: 50%;
+  width: 10rem;
+  margin: 0.5rem;
+  outline: 4px solid var(--gray);
+  outline-offset: 2px;
+}
+
+
+
+.right{
+  display: inline-block;
+  margin: 2.3rem 0.5rem 0px;
+  vertical-align: top;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button{
+  width: 10rem;
+  padding: 0.5rem 0px;
+  margin-top: 1rem;
+  border: none;
+  background-color:transparent;
+  cursor: pointer;
+  transition: all 0.15s linear;
+  border-radius: 5px;
+  color: white;
+}
+.buttons >button> span{
+  display: block;
+  font-weight: bold;
+}
+.buttons >button:hover{
+  background-color: #252525;
+}
+
+.active{
+  background-color: #252525 !important;
+}
+.detail a{
+  color:blue;
+  text-decoration: none;
+}
+
+
+.following img{
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+.followers img{
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.repo_list th{
+   text-align: left;
+}
+.load-more button{
+  width: 100%;
+  padding:5px 0px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.15s linear;
+
+}
+
+.load-more:hover{
+  background-color:#252525;
+}
+
+.footer{
+  text-align: center;
+}
+.footer a{
+  color: blue;
+}
+
+.repo_list a{
+  color: white;
+  text-decoration: none;
 }
