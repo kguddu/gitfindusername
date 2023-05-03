@@ -39,7 +39,7 @@ main{
 .head a .icon{
   width: 4rem;
   height: 4rem;
-  color: blue;
+  color: rgb(203, 203, 220);
   
 }
 .card{
@@ -121,7 +121,7 @@ form >button{
   background-color: #252525 !important;
 }
 .detail a{
-  color:blue;
+  color:rgb(110, 110, 245);
   text-decoration: none;
 }
 
@@ -159,7 +159,7 @@ form >button{
   text-align: center;
 }
 .footer a{
-  color: blue;
+  color: rgb(116, 116, 249);
 }
 
 .repo_list a{
